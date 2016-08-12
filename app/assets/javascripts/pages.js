@@ -3,6 +3,14 @@
 function changeColors() {
   setTimeout(function() {
     document.getElementById('first').style['color'] = 'red';
+    setTimeout(function() {
+      document.getElementById('second').style['color'] = 'blue';
+      setTimeout(function() {
+        document.getElementById('third').style['color'] = 'green';
+        setTimeout(function() {
+          document.getElementById('fourth').style['color'] = 'purple';
+        }, 1000);
+      }, 1000);
+    }, 1000);
   }, 1000);
-  document.getElementById('second').style['color'] = 'blue';
 }
